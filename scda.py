@@ -1791,5 +1791,5 @@ class QuarterplaneAPLC(NdiayeAPLC): # N'Diaye APLC subclass for the quarter-plan
         self.eval_metrics['fwhm area'] = np.mean(fwhm_area_polychrom)
         if verbose:
             print("Non-binary residuals, as a percentage of clear telescope aperture area: {:.2f}%".format(100*self.eval_metrics['apod nb res ratio']))
-            print("Band-averaged Airy throughput: {:.2f}%".format(100*self.eval_metrics['airy thrupt']))
+            print("Band-averaged Airy throughput: {:.2%}".format(self.eval_metrics['airy thrupt']))
             print("Band-averaged FWHM PSF area / (lambda0/D)^2: {:.2f}".format(self.eval_metrics['fwhm area']))
